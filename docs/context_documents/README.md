@@ -1,88 +1,198 @@
-<div align="center">
+# Context Documents
 
-![Fort Point Upskilling Collaborations logo](../assets/fp-up-logo.png)
+Context documents are continuation-ready project checkpoints. They preserve enough authoritative state for a person or AI assistant to resume work in a new conversation, on another device, or after a long interruption without reconstructing the project from memory.
 
-# Fort Point Upskilling Collaborations
+They are working records rather than polished introductions. A repository's main `README.md` explains the project to a reader; a context document explains exactly how to continue the work.
 
-**Mentored, hands-on machine learning, data science, software, and research projects for collaborative upskilling.**
+## The question each document answers
 
-*Build something small. Learn something real. Help somebody else move upward.*
+> If this work had to resume in a fresh environment, what would the next collaborator or AI assistant need to know?
 
-</div>
+A useful context document preserves:
 
-## Welcome
+- the current purpose and scope;
+- important terminology and naming decisions;
+- repository structure and component responsibilities;
+- implementation and experiment status;
+- decisions, constraints, and their rationale;
+- commands, tests, and known results;
+- unresolved questions and risks; and
+- immediate, concrete next steps.
 
-Fort Point Upskilling Collaborations is a community for people who want to learn by making useful things together.
+Do not merely summarize the latest conversation. Capture the project's current state.
 
-Our collaborations may include:
+## Documentation hierarchy
 
-- machine learning and data science;
-- software engineering and reproducible research;
-- AI evaluation and interpretability;
-- language, audio, image, and historical-data projects;
-- documentation, testing, design, and project coordination; and
-- other projects proposed by members and friends.
+```text
+Repository README
+    -> project brief or charter
+        -> context documents / lab notebook
+            -> detailed experiment notes and outputs
+```
 
-People may arrive with different backgrounds and amounts of experience. A good collaboration has a manageable starting point, room to grow, clear credit for contributions, and a path for asking questions without embarrassment.
+Each layer serves a different reader. Avoid duplicating everything from the repository README inside every context document.
 
-## Start here
+## Where context documents belong
 
-- **Browse our projects:** [Project catalogs](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/tree/main/catalogs)
-- **See active collaborations:** [Current collaborations](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/COLLABORATIONS.md)
-- **Meet participating members:** [Community](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/COMMUNITY.md)
-- **Learn how participation works:** [Contributing](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/CONTRIBUTING.md)
-- **Read our shared expectations:** [Code of conduct](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/CODE_OF_CONDUCT.md)
+For a particular repository, store them in:
 
-Some working repositories are private while a collaboration is getting started. Public descriptions, participant-approved credits, and shareable results can still appear here or in the landing-page repository.
+```text
+docs/context_documents/
+```
 
-## Featured and active collaborations
+The newest applicable document should be easy to identify by filename. Do not place private participant information in a public repository. A private collaboration repository may contain participant-specific working context when the participant understands and approves its use.
 
-| Collaboration | What we are exploring | Participants | Status |
-| --- | --- | --- | --- |
-| [Rubric Attribution Lab](https://github.com/fort-point-upskilling-collabs/rubric-attribution-lab-collab) | AI-evaluation evidence, rubric attribution, and interpretable scoring | Participant listing pending consent | Starting |
-| [Pocket Cocktail Party](https://github.com/fort-point-upskilling-collabs/pocket-cocktail-party-collab) | Audio source separation, synthetic experiments, and FastICA | Participant listing pending consent | Starting |
-| Your collaboration could go here | A member-proposed project with a clear first milestone | To be announced | Ideas welcome |
+## Naming convention
 
-Private repositories will be visible only to people who have been granted access. Their public links may therefore show a not-found page to other visitors until a public showcase is available.
+```text
+LN_{{SHORT_PROJECT_MARKER}}_YYYY-MM-DD_{{optional-tag}}_-_{{short-slug}}.md
+```
 
-## Project catalogs
+Examples:
 
-Members may maintain their own project catalogs. The landing-page repository collects links without requiring everyone to organize their work in exactly the same way.
+```text
+LN_ral_2026-10-16_ctx01_-_maya-onboarding-and-first-experiment.md
+LN_pcp_2026-10-20_parked_-_synthetic-mixture-validation.md
+```
 
-| Catalog owner | Catalog | Focus |
-| --- | --- | --- |
-| Dave Black | [Short catalog](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/catalogs/dave-black-project-catalog-short.md) · [Long catalog](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page/blob/main/catalogs/dave-black-project-catalog-long.md) | Machine learning, data science, research, and software projects |
-| Community members | Catalog links added with permission | Member-proposed projects and learning goals |
+`LN` means **Lab Notebook**. Keep the project marker short. Omit the optional tag unless it adds useful information, such as `ctx01`, `parked`, `handoff`, or `submitted-addenda`.
 
-## Participation and public credit
+## Context-document template
 
-Participation does **not** require anyone to publish personal information.
+Copy and complete the following structure. Remove sections that truly do not apply, but preserve concrete state and next actions.
 
-Members and outside collaborators may choose whether they want to be listed publicly. With permission, the public community page can include a GitHub username, preferred name, role or interests, collaboration links, and selected contributions. Anyone may ask to be added, revised, or removed.
+```markdown
+*BEGIN: Context Document Header*
 
-Public acknowledgment is not a substitute for repository history: commits, pull requests, issues, reviews, and documentation remain important records of contribution.
+# CONTEXT DOCUMENT — Continuation
 
-## How collaboration works
+## Project
 
-1. Choose a project or propose a small experiment.
-2. Agree on a first milestone that can actually be finished.
-3. Work in branches and use pull requests when practical.
-4. Ask questions early and document what you learn.
-5. Credit contributors clearly and only publish personal details with permission.
-6. Share public results when the participants and project are ready.
+**Name:**  
+{{Short project name}}
 
-## Security and access
+**Description:**  
+{{One to three sentences describing the project and what it produces}}
 
-- Use two-factor authentication on your GitHub account.
-- Prefer passkeys, security keys, authenticator apps, or GitHub Mobile over SMS.
-- Never share passwords, one-time codes, QR setup codes, recovery codes, or private keys.
-- Access is granted according to what each collaboration needs; most collaborators need **Write**, not **Admin**.
-- Report exposed credentials or sensitive data privately to an organization owner rather than opening a public issue.
+## Continuation metadata
 
-## Contact
+**Prepared at:**  
+{{YYYY-MM-DDTHH:MM:SS+/-HH:MM}}
 
-- Organization email: **fp.up.4th@gmail.com**
-- GitHub organization: <https://github.com/fort-point-upskilling-collabs>
+**Continued from:**  
+{{Exact chat, session, branch, issue, or prior context-document title}}
 
-We are building the community and its documentation in public where practical. Expect useful work in progress—and feel welcome to help improve it.
+**Also involving:**
+
+- {{Related topic, repository, or collaborator}}
+- {{Related topic, repository, or collaborator}}
+- {{Or: no other subjects specified}}
+
+## Author and source
+
+**Prepared by:**  
+{{Person and, if useful, AI assistant}}
+
+**Repository:**  
+{{Repository URL or owner/repository}}
+
+**Branch or revision:**  
+{{Branch name and latest relevant commit, if known}}
+
+## Intent for this context
+
+{{What this checkpoint should enable the next session to accomplish}}
+
+## Authoritative current state
+
+{{What exists now, what works, and what has been verified}}
+
+## Repository map
+
+{{Important files and directories with their responsibilities}}
+
+## Decisions and rationale
+
+- {{Decision and why it was made}}
+- {{Decision and why it was made}}
+
+## Commands and verification
+
+```bash
+{{Commands needed to reproduce, test, or inspect the current state}}
+```
+
+**Observed results:**
+
+{{What happened when the commands were last run; distinguish observation from expectation}}
+
+## Constraints, risks, and privacy
+
+- {{Known constraint, risk, privacy boundary, or safety rule}}
+
+## Open questions
+
+- {{Question that remains unresolved}}
+
+## Immediate next steps
+
+1. {{Small, concrete next action}}
+2. {{Next action after that}}
+3. {{Optional later action}}
+
+## Definition of the next stopping point
+
+{{What must be true before creating the next checkpoint or pausing}}
+
+*END: Context Document*
+```
+
+## Optional pre-context-document prompt
+
+Before pasting a context document into a fresh AI conversation, this short message can prevent unnecessary summarizing or re-derivation:
+
+```markdown
+## Current work
+
+Project: {{Very short project description}}
+
+The next message will be a continuation context document from:
+
+"{{Previous chat or session title}}"
+
+Treat it as authoritative project state. Do not summarize or reformat it. After receiving it:
+
+1. confirm receipt;
+2. identify any genuine blocker or contradiction; and
+3. help me continue with this immediate task:
+
+{{Concrete, task-oriented, ADHD-friendly next task}}
+```
+
+The pre-context prompt is optional. Give it to the **new** conversation, not to the conversation that is composing the context document.
+
+## Creating a strong checkpoint
+
+Before saving a context document:
+
+1. Verify repository status, important filenames, and the current branch.
+2. Separate observed results from plans or assumptions.
+3. Record why non-obvious decisions were made.
+4. Include enough commands to reproduce the current state.
+5. Make the first next step small and unambiguous.
+6. Remove secrets, credentials, private messages, and unnecessary personal information.
+7. Prefer links to stable project documentation over copying large sections verbatim.
+
+## Retrieval and continuation
+
+To resume work:
+
+1. Open `docs/context_documents/`.
+2. Sort filenames by date.
+3. Choose the newest document relevant to the current branch or task.
+4. Check whether a later document supersedes it.
+5. Begin with **Immediate next steps**.
+6. Create a new checkpoint before another major handoff or long pause.
+
+Context documents are checkpoint files for thinking: detailed enough to preserve momentum, restrained enough to remain usable.
 
