@@ -10,7 +10,7 @@ Public catalogs, collaboration summaries, participation information, and communi
 
 ## Explore
 
-- [Short project catalog](catalogs/FP-up_SHORT_Catalog_2026%20-09-28.md)
+- [Short project catalog](catalogs/FP-up_SHORT_Catalog_2026-09-28.md)
 - [Long project catalog](catalogs/FP-up_LONG_Catalog_2026-09-28.md)
 - [Current collaborations](COLLABORATIONS.md)
 - [Participating community members](COMMUNITY.md)
