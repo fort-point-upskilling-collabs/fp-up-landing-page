@@ -2,4 +2,8 @@
 Thumbs.db
 *~
 *.swp
+*.bak
+
+.venv
+.venv*
 

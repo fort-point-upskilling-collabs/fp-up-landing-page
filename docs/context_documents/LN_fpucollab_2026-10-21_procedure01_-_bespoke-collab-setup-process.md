@@ -14,14 +14,14 @@ The goal is **automated-yet-bespoke setup**: reuse a safe, tested project scaffo
 2026-10-21 (America/New_York; exact preparation time not recorded)
 
 **Continued from:**  
-ChatGPT conversation `Upskilling_Create_Colab_Repos`, including creation of the Fort Point landing page, Maya's Rubric Attribution Lab, and the default Roman Numeral Word Lab package.
+ChatGPT conversation `Upskilling_Create_Colab_Repos`, including creation of the Fort Point landing page, _M.C._'s Rubric Attribution Lab, and the default Roman Numeral Word Lab package.
 
 **Also involving:**
 
 - [`fort-point-upskilling-collabs/fp-up-landing-page`](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page)
 - `rubric-attribution-lab-mc-db-collab` (renaming from `rubric-attribution-lab-mc-collab` recommended)
 - `roman-numeral-word-lab-default-collab`
-- planned Brian and Justin numeral-word collaborations
+- planned _B.P._ and _J.C._ numeral-word collaborations
 
 ## Author and source
 
@@ -440,7 +440,7 @@ When demand is high, distribute a verified default package with minimal external
 
 - The public organization profile and `fp-up-landing-page` repository exist.
 - The landing page contains organization documents, project catalogs, and context-document guidance.
-- Maya's private Rubric Attribution Lab scaffold has been committed and pushed; Maya was invited with `Write` access as an outside collaborator. Renaming it to `rubric-attribution-lab-mc-db-collab` is recommended for the current naming pattern.
+- _M.C._'s private Rubric Attribution Lab scaffold has been committed and pushed; _M.C._ was invited with `Write` access as an outside collaborator. Renaming it to `rubric-attribution-lab-mc-db-collab` is recommended for the current naming pattern.
 - A verified `roman-numeral-word-lab-default-collab.zip` exists with SHA-256:
 
 ```text
@@ -448,8 +448,8 @@ d99f6f4fed9876aa635c8d7c5b45b6cf00428c61cfddef900ce590a4414475a6
 ```
 
 - The default numeral-word package contains a runnable Roman-numeral example, DFS search, tests, notebook, optional C++ validator, and mentor customization guidance.
-- Planned bespoke numeral-word repositories are `roman-numeral-word-lab-bp-db-collab` for Brian and `roman-numeral-word-lab-jc-db-collab` for Justin.
-- Brian's intended emphasis is Python learning and foundational construction. Justin's intended emphasis is stronger Python, NLP, search, and analysis. Final designs await questionnaire responses and review of planning material.
+- Planned bespoke numeral-word repositories are `roman-numeral-word-lab-bp-db-collab` for _B.P._ and `roman-numeral-word-lab-jc-db-collab` for _J.C._.
+- _B.P._'s intended emphasis is Python learning and foundational construction. _J.C._'s intended emphasis is stronger Python, NLP, search, and analysis. Final designs await questionnaire responses and review of planning material.
 
 ## Open procedural questions
 
@@ -462,14 +462,14 @@ d99f6f4fed9876aa635c8d7c5b45b6cf00428c61cfddef900ce590a4414475a6
 ## Immediate next steps
 
 1. Save this document under `fp-up-landing-page/docs/context_documents/` and commit it after review.
-2. Rename Maya's repository and update the local remote if the current naming convention is adopted immediately.
+2. Rename _M.C._'s repository and update the local remote if the current naming convention is adopted immediately.
 3. Inspect and publish the default numeral-word scaffold as a private canonical repository if desired.
-4. Review Brian's questionnaire and derive `roman-numeral-word-lab-bp-db-collab`.
-5. Review Justin's questionnaire and derive `roman-numeral-word-lab-jc-db-collab`.
+4. Review _B.P._'s questionnaire and derive `roman-numeral-word-lab-bp-db-collab`.
+5. Review _J.C._'s questionnaire and derive `roman-numeral-word-lab-jc-db-collab`.
 6. Create separate `proclearningsNN` checkpoints when lessons are worth preserving without expanding this procedure document.
 
 ## Definition of the next stopping point
 
-The next procedure checkpoint is warranted after at least Brian's and Justin's repositories have been derived from the same default, launched privately, and used enough to identify which parts of this workflow saved time, created confusion, or required exceptions. Before then, record significant observations in dated `proclearningsNN` documents.
+The next procedure checkpoint is warranted after at least _B.P._'s and _J.C._'s repositories have been derived from the same default, launched privately, and used enough to identify which parts of this workflow saved time, created confusion, or required exceptions. Before then, record significant observations in dated `proclearningsNN` documents.
 
 *END: Context Document*
