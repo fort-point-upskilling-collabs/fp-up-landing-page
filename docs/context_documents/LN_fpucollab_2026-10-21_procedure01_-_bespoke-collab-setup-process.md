@@ -2,6 +2,8 @@
 
 # Bespoke Collaboration Setup Process
 
+**Quick note**: certain people have been gracious enough to be the first adopters of the process described here. They will be referred to by first and last initials, which may or may not match their actual names. Dave has done some of the setup, and since his last name starts with B, he works be referred to as _D.B._, with the combination of italics and the `"{{Letter}}.{{Letter}}."` pattern making it clear that an individual is being referred to. You'll see _M.C._, _J.C._, _B.P._, and _J.M.J._ No need to get uptight of there happen to be three initials.
+
 ## Purpose and intended readers
 
 This document records the current recommended procedure for creating Fort Point Upskilling Collaborations repositories that are quick to launch but meaningfully adapted to the learner. It is written for organization owners, mentors, future repository stewards, learners who want to understand the setup process, and AI assistants helping with repository preparation.
@@ -11,7 +13,7 @@ The goal is **automated-yet-bespoke setup**: reuse a safe, tested project scaffo
 ## Continuation metadata
 
 **Prepared at:**  
-2026-10-21 (America/New_York; exact preparation time not recorded)
+2026-10-21 (America/New_York)
 
 **Continued from:**  
 ChatGPT conversation `Upskilling_Create_Colab_Repos`, including creation of the Fort Point landing page, Maya's Rubric Attribution Lab, and the default Roman Numeral Word Lab package.
