@@ -2,7 +2,7 @@
 
 # Bespoke Collaboration Setup Process
 
-**Quick note**: certain people have been gracious enough to be the first adopters of the process described here. They will be referred to by first and last initials, which may or may not match their actual names. Dave has done some of the setup, and since his last name starts with B, he works be referred to as _D.B._, with the combination of italics and the `"{{Letter}}.{{Letter}}."` pattern making it clear that an individual is being referred to. You'll see _M.C._, _J.C._, _B.P._, and _J.M.J._ No need to get uptight of there happen to be three initials.
+**Quick note on names**: certain people have been gracious enough to be the first adopters of the process described here. They will be referred to by first and last initials, which may or may not match their actual names. _Dave_ has done some of the setup, and his last name starts with B, so he would be referred to as _D.B._ with this convention; the combination of italics and the `"{{Letter}}.{{Letter}}."` pattern are to make it clear that an individual is being referred to. You'll see _M.C._, _J.C._, _B.P._, and _J.W.J._ No need to get uptight of there happen to be three initials. If certain of these early adopters agree to have their first names used, you might see names besides _Dave_'s. I might just keep the initials for privacy and security, anyway.
 
 ## Purpose and intended readers
 
@@ -15,20 +15,20 @@ The goal is **automated-yet-bespoke setup**: reuse a safe, tested project scaffo
 **Prepared at:**  
 2026-10-21 (America/New_York)
 
-**Continued from:**  
-ChatGPT conversation `Upskilling_Create_Colab_Repos`, including creation of the Fort Point landing page, Maya's Rubric Attribution Lab, and the default Roman Numeral Word Lab package.
+**Built following a conversation between _Dave_ and ChatGPT**
 
-**Also involving:**
+**The chat involved other subjects** that will be important for the procedure, including
 
-- [`fort-point-upskilling-collabs/fp-up-landing-page`](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page)
-- `rubric-attribution-lab-mc-db-collab` (renaming from `rubric-attribution-lab-mc-collab` recommended)
-- `roman-numeral-word-lab-default-collab`
-- planned Brian and Justin numeral-word collaborations
+- [`fort-point-upskilling-collabs/fp-up-landing-page`](https://github.com/fort-point-upskilling-collabs/fp-up-landing-page) &mdash; the Fort Point landing page 
+- `rubric-attribution-lab-mc-db-collab` (renaming from `rubric-attribution-lab-mc-collab` recommended) &mdash; _M.C._'s Rubric Attribution Lab
+- `roman-numeral-word-lab-default-collab` &mdash; the default Roman Numeral Word Lab package
+- planned _B.P._ and _J.C._ numeral-word collaborations that will work off of the default Roman Numeral Word Lab
+- an upcoming walkthrough of _J.W.J._'s JabberVec letter2vec encoding vectorization training and visualization, which will lead to a good parts version of this guide to be found at `docs/COLLABORATION_SETUP_STEPS.md`, which you ~~can~~ `will (eventually)` go to directly by clicking ~~on this link~~~ `[holding spot for link when complete](dead-for-now)`. I think you will (and should) use that condensed version unless you need clarity on one of the points, and then you can click on the link `that will lead` back to this document.
 
 ## Author and source
 
 **Prepared by:**  
-David Black and kamMA (ChatGPT), from decisions developed collaboratively
+David Black and kamMA (ChatGPT), from decisions developed collaboratively. **This procedure was conceived of and outlined by Dave and has been implemented with the help of AI.**
 
 **Repository:**  
 `fort-point-upskilling-collabs/fp-up-landing-page`
@@ -91,6 +91,7 @@ Examples:
 rubric-attribution-lab-mc-db-collab
 roman-numeral-word-lab-bp-db-collab
 roman-numeral-word-lab-jc-db-collab
+jabbervec-l2v-jwj-db-collab
 ```
 
 Use lowercase ASCII letters, numbers when needed, and hyphens. Two-letter initials are a convention, not an identity system; resolve collisions deliberately.
@@ -121,11 +122,11 @@ Make a repository public only after the learner agrees, secrets and personal inf
 
 ### External START_HERE document
 
-An external `START_HERE_ext_{friend-name}.md` may explain the invitation, account setup, questionnaire, expected next action, and how the eventual private repository will be shared. This file exists before repository access and therefore should not depend on the recipient already knowing GitHub.
+An external `START_HERE_ext_{friend-name}.md` may explain the invitation, account setup, questionnaire, expected next action, and how the eventual private repository will be shared. This file exists before repository access (it's **ext**renal to the repo) and therefore should not depend on the recipient already knowing GitHub. `{friend-name}` is Dave's convention for the friend with whom he is collaborating, also referred to as the person being mentored. Examples could be any of the complete first names of _M.C._, _J.C._, _B.P._, _J.W.J._, or any of the other friend-collaborators who are interested.
 
 ### Bespoke project questionnaire
 
-Use `BESPOKE_{friend-name}_PROJECT_ext_QUESTIONNAIRE.md` to elicit existing skills, learning goals, learning style, career goals, interests, available time, preferred tools, accessibility constraints, and desired balance between guidance and independent problem-solving. The questionnaire can remain substantially consistent across participants; the response drives customization.
+Use `BESPOKE_{friend-name}_PROJECT_ext_QUESTIONNAIRE.md` to elicit existing skills, learning goals, learning style, career goals, interests, available time, preferred tools, accessibility constraints, and desired balance between guidance and independent problem-solving. The questionnaire can remain substantially consistent across participants; the response drives customization. There is `[or soon will be]` a `BESPOKE_general_PROJECT_ext_QUESTIONNAIRE.md`, which will most often be usable as is; that is to say, mentors won't need to create their own questionnaire, though they can do so is they want. this general version can be used simply by downloading it, changing the filename to indicate the learning collaborator, and sending the learner the file via email or another method.
 
 ### GitHub account and two-factor authentication guidance
 
@@ -139,15 +140,15 @@ Questionnaire answers are planning inputs, not automatic repository content. Ext
 
 ### Route A — Mentor-created bespoke repository
 
-The mentor reviews the questionnaire, selects a project focus, adapts the scaffold and code, verifies it, creates the private repository, and invites the learner. This offers the strongest initial tailoring.
+The mentor reviews the questionnaire, selects a project focus, adapts the scaffold and code, verifies it, creates the private repository, and invites the learner. This offers the strongest initial tailoring. Mentors are encouraged to partner with AI Assistants to turn a project idea into a starting scaffold or to create a back-near-the-start version of an existing, possibly completed repo or other project.
 
 ### Route B — Default scaffold customized after questionnaire review
 
-Start with a tested, neutral default package. Use questionnaire answers to remove irrelevant options, change comments and incomplete functions, select exercises, and generate participant-specific context and steps. This is the present preferred route when several related collaborations are expected.
+Start with a tested, neutral default package. Use questionnaire answers to remove irrelevant options, change comments and incomplete functions, select exercises, and generate participant-specific context and steps. This is the present preferred route when several related collaborations are expected. Again, AI Assistant can be used to accelerate this process; both mentors and mentees should come away from a collaboration with better skills designing and coding with AI.
 
 ### Route C — Learner and AI customize the default scaffold
 
-Give the learner the default scaffold, external guidance, and questionnaire. Instruct them to give their answers and selected project files to an AI assistant, request a participant context document and proposed `STEPS.md`, and review the changes with a mentor. This supports higher demand while retaining a personalization path.
+Give the learner the default scaffold, external guidance, and questionnaire. Instruct them to give their answers and selected project files to an AI assistant, request a participant context document and proposed `STEPS.md` (it's a good idea to include the `STEPS_default.md` to give the AI a useful point of reference,) and review the changes with a mentor. This supports higher demand for collaborations while retaining a personalization path.
 
 ### Route D — Begin immediately without a questionnaire
 
@@ -157,11 +158,11 @@ A learner may use `START_HERE.md` and `STEPS_default.md` directly. The questionn
 
 ### Neutral project objective
 
-Define a coherent project question broad enough to support several learning paths but small enough to demonstrate. State what the default does and does not claim.
+Define a coherent project question broad enough to support several learning paths but small enough to demonstrate. State what the default does and does not claim. In many cases, this can be a previously-completed or partially-implemented project, perhaps in an existing GitHub repository of the mentor. _Dave_ already has several project ideas viewable with `[short](get-url)` or `[long](get-url)` descriptions, and he hopes others will add their project ideas and previous projects in similar catalogs.
 
 ### Runnable reference implementation
 
-Provide at least one small path that runs successfully. A learner should be able to distinguish environment problems from intentionally unfinished work.
+Provide at least one small path that runs successfully. A learner should be able to distinguish environment problems from intentionally unfinished work. AI Assistants can give suggestions and even lead or complete the short runnable example.
 
 ### Intentional learning gaps
 
@@ -169,15 +170,15 @@ Leave work incomplete only when the gap serves an identified learning goal. Pref
 
 ### Notebook, terminal, and interactive Python access
 
-When appropriate, include a guided Jupyter notebook that imports reusable modules, demonstrates the current project, and gives the learner a presentation-ready path. A beginning Python learner should also be told that the same statements can be tried in the interactive Python prompt (`>>>` and `...`) with the necessary imports and correct working directory. Collapsible notebook notes may show equivalent PowerShell and Bash commands without overwhelming the main narrative.
+It is often helpful and appropriate include a guided Jupyter notebook that imports reusable modules, demonstrates the current project, and gives the learner a presentation-ready path. Jupyter notebooks are an especially good easy to present completed work in an attractive way for hiring managers and recruiters to see. A beginning Python learner should also be told that the same statements can be tried in the interactive Python prompt (`>>>` and `...`) with the necessary imports and correct working directory. Collapsible notebook notes may show equivalent PowerShell and Bash commands to access and use the REPL without overwhelming the main narrative.
 
 ### Tests and validation commands
 
-Include a small automated test suite, a demonstration or smoke-test command, and validation for notebook or data structure where practical. Record expected and observed results separately.
+Mentors might want to include a small automated test suite, a demonstration or smoke-test command, and validation for notebook or data structure where practical. If these don't already exist, the mentor can use their own AI Assistant to create them, learning step-by-step (or delegating to the AI) the complete coding of the test, demo, smoke-test, or validation. Record expected and observed results separately.
 
 ### Documentation and licensing
 
-The default should normally include `README.md`, `START_HERE.md`, `STEPS_default.md`, `PROJECT_BRIEF.md`, `AI_ASSISTANCE.md`, provenance and safety guidance, a license, dependency information, and domain-specific references.
+The default should normally include `README.md`, `START_HERE.md`, `STEPS_default.md`, `PROJECT_BRIEF.md`, `AI_ASSISTANCE.md`, provenance and safety guidance, a license, dependency information, and domain-specific references. Once again, mentors should consider using AI Assistants to complete these.
 
 ### Default ZIP archive
 
@@ -185,13 +186,27 @@ Create a ZIP with one enclosing project directory. Test the archive, calculate a
 
 ### Optional canonical default repository
 
-A private canonical default repository is useful when the scaffold will evolve or generate several bespoke repositories. Customized participant repositories should normally be independent repositories rather than forks that expose an unwanted ancestry or permission relationship.
+A private canonical default repository is useful when the scaffold will evolve or generate several bespoke repositories. Customized participant repositories should normally be independent repositories rather than forks that expose an unwanted ancestry or permission relationship. This might be made clearer  by following the naming convention,
+
+```text
+{project-base}-{primary-mentee-initials}-{primary-mentor-initials}-collab
+```
+
+but changing it to
+
+```text
+{project-base}-default-collab
+```
 
 ## Interpreting questionnaire responses
 
 ### Existing technical skills
 
 Determine what the learner can already do independently and what they have only encountered. Do not infer mastery from a tool name alone.
+
+Unless you have the time and inclination to do this all manually, we recommend having your AI Assistant help you perform this analysis more quickly.
+
+Also remember that this landing page repository has `[or soon will have]` a `BESPOKE_general_PROJECT_ext_QUESTIONNAIRE.md` that a mentor can download as-is and simply rename to `BESPOKE_{primary-mentee-name}_PROJECT_ext_QUESTIONNAIRE.md`. If you do that, you can skip the following sections, since they are `[or will be]` covered in the `general` document.
 
 ### Learning goals
 
